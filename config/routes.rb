@@ -1,4 +1,5 @@
 Hike::Application.routes.draw do
+  get "welcome/login"
   get "welcome/create_account"
   get "welcome/mountain"
   get "welcome/profile"
