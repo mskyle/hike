@@ -1,4 +1,5 @@
 Hike::Application.routes.draw do
+  get "welcome/profile"
   get "welcome"  => "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,3 +1,18 @@
 // import original bootstrap
 @import "twitter/bootstrap";
 @import "variables";
+
+/* ADDED for centering navbar items */
+.navbar-centered .navbar-nav {
+    float: none;
+    text-align: center;
+}
+.navbar-centered .navbar-nav > li {
+    float: none;
+}
+.navbar-centered .nav > li {
+    display: inline;
+}
+.navbar-centered .nav > li > a {
+    display: inline-block;
+}
