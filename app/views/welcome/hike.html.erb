@@ -1,0 +1,172 @@
+<!-- Top Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">SummitUp!</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Record a Hike</a></li>
+      <li><a href="#">Plan a Hike</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Stuff<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Hikes</a></li>
+          <li><a href="#">My Mountains</a></li>
+          <li><a href="#">My Friends</a></li>
+          <li><a href="#">My Achievements</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active">
+        <a href="#"><span class="badge pull-right">5</span>
+      Notifications
+    </a>
+  </li>
+      <li><a href="#">Sign out</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="col-md-4">
+Upload Photo
+</div>
+
+<div class="col-md-8">
+  <form role="form">
+    <div class="form-group">
+      <label for="mountain">Mountain</label>
+      <select class="form-control">
+        <option>Mt Washington</option>
+        <option>Mt Adams</option>
+        <option>Mt Moosilauke</option>
+        <option>Mt Abram</option>
+        <option>Mt Greylock</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" class="form-control" id="date" placeholder="Enter date">
+    </div>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Hike title">
+    </div>
+        <div class="form-group">
+      <label for="friends">Tag friends</label>
+      <input type="text" class="form-control" id="friends" placeholder="Friends">
+    </div>
+    <div class="form-group">
+      <label for="trails">Tag trails</label>
+      <input type="text" class="form-control" id="trails" placeholder="Trails">
+    </div>
+    <div class="form-group">
+      <label for="trails">Book time</label>
+      <input type="text" class="form-control" id="book-time" placeholder="0:00">
+    </div>
+    <div class="form-group">
+      <label for="trails">Actual time</label>
+      <input type="text" class="form-control" id="actual-time" placeholder="0:00">
+    </div>
+    <div class="form-group">
+      <label for="mileage">Mileage</label>
+      <input type="text" class="form-control" id="mileage" placeholder="0.0">
+    </div>
+    <label for="rating">Hike rating</label>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="hike" id="hike1" value="option1" checked>
+        1
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="hike" id="hike2" value="option2">
+        2
+      </label>
+    </div>
+        <div class="radio-inline">
+      <label>
+        <input type="radio" name="hike" id="hike3" value="option3" checked>
+        3
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="hike" id="hike4" value="option4">
+        4
+      </label>
+    </div>
+        <div class="radio-inline">
+      <label>
+        <input type="radio" name="hike" id="hike5" value="option5" checked>
+        5
+      </label>
+    </div>
+    <label for="rating">Difficulty rating</label>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="difficulty" id="difficulty1" value="option1" checked>
+        1
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="difficulty" id="difficulty2" value="option2">
+        2
+      </label>
+    </div>
+        <div class="radio-inline">
+      <label>
+        <input type="radio" name="difficulty" id="difficulty3" value="option3" checked>
+        3
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="difficulty" id="difficulty4" value="option4">
+        4
+      </label>
+    </div>
+        <div class="radio-inline">
+      <label>
+        <input type="radio" name="difficulty" id="difficulty5" value="option5" checked>
+        5
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="title">Hike notes</label>
+      <textarea class="form-control" id="title" rows="6" placeholder="How did it go? What trails did you take?"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">Upload Photo</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">You can submit up to three jpg files.</p>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">Upload GPS tracks</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">You can submit a .gpx format file. </p>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<div class="col-md-12">
+  <ul class="nav nav-pills">
+  <li class="disabled"><a href="#">About</a></li>
+  <li class="disabled"><a href="#">Suggestions</a></li>
+  <li><img src="/images/lilhikon.png"></li>
+  <li class="disabled"><a href="#">Settings</a></li>
+  <li class="disabled"><a href="#">Home</a></li>
+</ul></div>

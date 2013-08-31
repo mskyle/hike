@@ -1,4 +1,6 @@
 Hike::Application.routes.draw do
+  get "welcome/hike_view"
+  get "welcome/hike"
   get "welcome/login"
   get "welcome/create_account"
   get "welcome/mountain"
